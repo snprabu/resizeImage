@@ -1,7 +1,9 @@
 This tool is very simple to resize the image. All we need to include three attributes with the image tag.
 
 `**class="alignimg" **`
+
 `**data-width="200" (width of the pod) **`
+
 `**data-height="150" (height of the pod)**`
 
 ## Sample Image Tag below:
