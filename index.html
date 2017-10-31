@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/ImgAlignment.js"></script>
+
+<style type="text/css">
+	.parentimgPod{
+		position:absolute;
+		top:25%;
+		left:25%;
+		width:660px;
+		transform:-translateX(-50%);
+		transform:-translateY(-50%);
+	}
+	.childimgPod{
+		width:200px;
+		height:150px;
+		margin:0 20px 20px 0;
+		padding:0;
+		float:left;
+		position:relative;
+	}
+</style>
+
+</head>
+<body>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<div class="parentimgPod">
+	<img src="img/test1.jpg" class="alignimg" data-width="200" data-height="150" />
+	<img src="img/test2.jpg" class="alignimg" data-width="200" data-height="150" />
+	<img src="img/test3.jpg" class="alignimg" data-width="200" data-height="150" />
+	<img src="img/test4.jpg" class="alignimg" data-width="200" data-height="150" />
+	<img src="img/test5.jpg" class="alignimg" data-width="200" data-height="150" />
+	<img src="img/test6.jpg" class="alignimg" data-width="200" data-height="150" />
+	<img src="img/test7.jpg" class="alignimg" data-width="200" data-height="150" />
+	<p class="result"></p>
+</div>
+<script>
+	$(window).load(function(){
+		$(".alignimg").imgAlignment();
+	});
+	$(window).resize(function(e){
+		$(".alignimg").imgAlignment();
+	});
+</script>
+</body>
+</html>
